@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.7.2",
+    "eslint": "^8.56.0",
+    "sass": "^1.70.0",
+    "vite": "^5.0.12",
+    "vite-plugin-ruby": "^5.0.0"
+  },
+  "dependencies": {
+    "@inertiajs/vue3": "^1.0.14",
+    "@js-from-routes/client": "^1.0.4",
+    "@js-from-routes/inertia": "^1.10.2",
+    "@mdi/font": "^7.4.47",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "vite-plugin-full-reload": "^1.1.0",
+    "vite-plugin-vuetify": "^2.0.1",
+    "vuetify": "^3.5.2"
+  }
+}
