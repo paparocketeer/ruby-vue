@@ -10,10 +10,7 @@
     }
   },
   "lint-staged": {
-    "*.(js|vue)": [
-      "npm run lint:write",
-      "git add"
-    ]
+    "*.(js|vue)": ["npm run lint:write"]
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.4",
