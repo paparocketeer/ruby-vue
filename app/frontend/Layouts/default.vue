@@ -5,7 +5,7 @@ import { usersSessions as sessionsApi } from '../api'
 
 const drawer = ref(null)
 const resources = [
-  { name: 'Users', uri: '/users', icon: 'mdi-account123' },
+  { name: 'Users', uri: '/users', icon: 'mdi-account' },
   { name: 'Expenses', uri: '/expenses', icon: 'mdi-finance' },
   { name: 'Categories', uri: '/categories', icon: 'mdi-rhombus-split' },
 ]
