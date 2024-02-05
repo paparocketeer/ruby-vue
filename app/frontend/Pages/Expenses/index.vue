@@ -1,17 +1,17 @@
+<script setup>
+defineProps(['expenses'])
+</script>
+
 <template>
   <div v-for="expense in expenses" :key="expense.id" class="pa-4">
     <v-card variant="tonal">
-      <template v-slot:title>
+      <template #title>
         {{ expense.name }}
       </template>
 
-      <template v-slot:subtitle>
+      <template #subtitle>
         {{ expense.amount }}
       </template>
     </v-card>
   </div>
 </template>
-
-<script setup>
-defineProps(['expenses'])
-</script>

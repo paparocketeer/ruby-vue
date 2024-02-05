@@ -10,7 +10,7 @@ const title = computed(() => {
     403: '403',
     404: '404',
     500: '500',
-    503: '503'
+    503: '503',
   }[props.status]
 })
 const description = computed(() => {
@@ -18,7 +18,7 @@ const description = computed(() => {
     403: 'Unauthorized',
     404: 'Not found',
     500: 'Serever Error',
-    503: 'Maintenance'
+    503: 'Maintenance',
   }[props.status]
 })
 </script>
@@ -31,11 +31,17 @@ const description = computed(() => {
     class="linear-gradient"
   >
     <v-col sm="12" md="4">
-      <div class="text-h1 mx-auto text-center">{{ title }}</div>
-      <div class="text-center py-8">{{ description }}</div>
+      <div class="text-h1 mx-auto text-center">
+        {{ title }}
+      </div>
+      <div class="text-center py-8">
+        {{ description }}
+      </div>
       <div class="text-center">
         <iLink href="/" class="inertia-link" as="v-btn">
-          <v-btn variant="text" color="primary"> Ir al inicio </v-btn>
+          <v-btn variant="text" color="primary">
+            Ir al inicio
+          </v-btn>
         </iLink>
       </div>
     </v-col>

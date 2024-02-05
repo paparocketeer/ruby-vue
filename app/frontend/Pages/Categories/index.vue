@@ -1,3 +1,7 @@
+<script setup>
+defineProps(['categories'])
+</script>
+
 <template>
   <v-container>
     <div v-for="category in categories" :key="category.id" class="pa-4">
@@ -5,7 +9,3 @@
     </div>
   </v-container>
 </template>
-
-<script setup>
-defineProps(['categories'])
-</script>

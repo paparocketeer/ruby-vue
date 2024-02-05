@@ -1,7 +1,7 @@
-import { createApp, h } from "vue";
-import { createInertiaApp, Head, Link } from "@inertiajs/vue3";
-import { vuetifyPlugin } from "./vuetify";
-import { resolvePage } from "./pages";
+import { createApp, h } from 'vue'
+import { Head, Link, createInertiaApp } from '@inertiajs/vue3'
+import { vuetifyPlugin } from './vuetify'
+import { resolvePage } from './pages'
 
 export default function () {
   createInertiaApp({
@@ -17,14 +17,14 @@ export default function () {
       showSpinner: false,
     },
     setup({ el, App, props, plugin }) {
-      const app = createApp({ render: () => h(App, props) });
-      app.use(plugin);
-      app.use(vuetifyPlugin);
+      const app = createApp({ render: () => h(App, props) })
+      app.use(plugin)
+      app.use(vuetifyPlugin)
 
-      app.component("iHead", Head);
-      app.component("iLink", Link);
+      app.component('iHead', Head)
+      app.component('iLink', Link)
 
-      app.mount(el);
+      app.mount(el)
     },
-  });
+  })
 }
