@@ -8,5 +8,5 @@ export default antfu({
   vue: true,
   jsonc: false,
   yaml: false,
-  files: ['app/frontend/**/*.{js,vue}'],
+  files: ['**/*.{js,vue}'],
 })
